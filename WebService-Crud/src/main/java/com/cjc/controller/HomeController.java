@@ -24,6 +24,7 @@ public class HomeController {
 
 	@PostMapping("/adds")
 	public String addStudent(@RequestBody Student s) {
+		System.out.println("Hey Hello world..............!!");
 		System.out.println("open add student called----");
 		sr.addStudent(s);
 		return "Data Added Successfully";
